@@ -1,0 +1,38 @@
+name: Update Data
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Paso 1 Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Paso 2 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9.2"
+      - name: Paso 3 - crea entorno virtual
+        run: python -m venv venv
+      - name: Paso 4 - activar entorno virtual
+        run: ./venv/Scripts/activate
+      - name: Paso 5 - actualizar pip
+        run: pip install --upgrade pip
+      - name: Paso 6 - instalar dependencias
+        run: pip install -e .
+      - name: Paso 7 - Ejecutar Script
+        run: python prueba.py
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Primera entrega action
+          commit_user_name: Carlos Alberto Velez M [GitHub Actions]
+          commit_user_email: carlos.velez51@iudigital.edu.co
+          commit_author: Carlos Alberto Velez M <carlos.velez51@iudigital.edu.co>
