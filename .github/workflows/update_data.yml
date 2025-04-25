@@ -25,19 +25,20 @@ jobs:
       - name: Paso 4 - Activar entorno virtual
         run: |
           .\venv\Scripts\activate
-          python -c "import sys; print(sys.executable)"  # Verificación
+          python -c "import sys; print(sys.executable)"  # Verificación de activación
 
-      - name: Paso 5 - Actualizar pip
+      - name: Paso 5 - Actualizar pip y herramientas de construcción
         run: |
-          pip install --upgrade pip
-
-      - name: Paso 5.5 - Limpiar residuos y instalar dependencias de construcción
-        run: |
-          rmdir /s /q *.egg-info 2> nul || true
+          python -m pip install --upgrade pip
           pip install --upgrade setuptools wheel
 
-      - name: Paso 6 - Instalar dependencias (modo editable)
-        run: pip install -e .
+      - name: Paso 5.5 - Limpieza de residuos
+        run: |
+          Get-ChildItem -Recurse -Directory -Filter *.egg-info | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+
+      - name: Paso 6 - Instalar dependencias en modo editable
+        run: |
+          pip install -e .
 
       - name: Paso 7 - Ejecutar Script
         run: python prueba.py
