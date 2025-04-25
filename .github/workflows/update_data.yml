@@ -11,21 +11,34 @@ jobs:
       contents: write
 
     steps:
-      - name: Paso 1 Checkout repo
+      - name: Paso 1 - Checkout repo
         uses: actions/checkout@v4
 
-      - name: Paso 2 Setup Python
+      - name: Paso 2 - Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.9.2"
-      - name: Paso 3 - crea entorno virtual
+
+      - name: Paso 3 - Crear entorno virtual
         run: python -m venv venv
-      - name: Paso 4 - activar entorno virtual
-        run: ./venv/Scripts/activate
-      - name: Paso 5 - actualizar pip
-        run: pip install --upgrade pip
-      - name: Paso 6 - instalar dependencias
+
+      - name: Paso 4 - Activar entorno virtual
+        run: |
+          .\venv\Scripts\activate
+          python -c "import sys; print(sys.executable)"  # Verificación
+
+      - name: Paso 5 - Actualizar pip
+        run: |
+          pip install --upgrade pip
+
+      - name: Paso 5.5 - Limpiar residuos y instalar dependencias de construcción
+        run: |
+          rmdir /s /q *.egg-info 2> nul || true
+          pip install --upgrade setuptools wheel
+
+      - name: Paso 6 - Instalar dependencias (modo editable)
         run: pip install -e .
+
       - name: Paso 7 - Ejecutar Script
         run: python prueba.py
 
