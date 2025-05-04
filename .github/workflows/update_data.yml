@@ -20,13 +20,20 @@ jobs:
           python-version: "3.9.2"
       - name: Paso 3 - crea entorno virtual
         run: python -m venv venv
+
       - name: Paso 4 - activar entorno virtual
         run: ./venv/Scripts/activate
+          
       - name: Paso 5 - actualizar pip
         run: pip install --upgrade pip
+
       - name: Paso 6 - instalar dependencias
         run: pip install -e .
-      - name: Paso 7 - Ejecutar Script
+
+      - name: Paso 7 - instalar dependencias
+        run: python -m pip install yfinance
+
+      - name: Paso 8 - Ejecutar Script
         run: python prueba.py
 
       - name: Commit and Push changes
