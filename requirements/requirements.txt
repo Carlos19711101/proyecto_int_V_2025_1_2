@@ -3,3 +3,4 @@ numpy
 openpyxl
 requests
 yfinance
+scikit-learn
