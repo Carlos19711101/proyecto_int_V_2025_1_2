@@ -8,3 +8,81 @@
 2025-05-03 19:49:24,126 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
 2025-05-03 19:49:24,566 - INFO - SQLite actualizado con 2733 filas
 2025-05-03 19:49:24,567 - INFO - Actualización de datos completada
+2025-05-23 18:22:42,143 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 18:22:45,665 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 18:22:55,028 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 18:22:55,028 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 18:22:55,475 - INFO - CSV actualizado con 2753 filas
+2025-05-23 18:22:55,475 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 18:35:51,932 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 18:35:54,498 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 18:35:55,409 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 18:35:55,409 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 18:35:55,473 - INFO - CSV actualizado con 2753 filas
+2025-05-23 18:35:55,473 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 18:35:55,949 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 18:35:55,950 - INFO - Actualización de datos completada
+2025-05-23 20:42:12,895 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 20:42:15,266 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 20:42:16,386 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 20:42:16,387 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 20:42:16,512 - INFO - CSV actualizado con 2753 filas
+2025-05-23 20:42:16,512 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 20:42:18,547 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 20:42:18,548 - INFO - Actualización de datos completada
+2025-05-23 21:02:18,096 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 21:02:19,756 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 21:02:20,837 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 21:02:20,838 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 21:02:21,128 - INFO - CSV actualizado con 2753 filas
+2025-05-23 21:02:21,129 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 21:02:23,082 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 21:02:23,084 - INFO - Actualización de datos completada
+2025-05-23 21:16:04,337 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 21:16:08,205 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 21:16:10,132 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 21:16:10,133 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 21:16:10,399 - INFO - CSV actualizado con 2753 filas
+2025-05-23 21:16:10,400 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 21:16:11,567 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 21:16:11,568 - INFO - Actualización de datos completada
+2025-05-23 21:47:31,451 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 21:47:33,889 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 21:47:35,710 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 21:47:35,714 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 21:47:35,886 - INFO - CSV actualizado con 2753 filas
+2025-05-23 21:47:35,887 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 21:47:36,820 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 21:47:36,821 - INFO - Actualización de datos completada
+2025-05-23 22:07:10,548 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 22:07:12,614 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 22:07:13,562 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 22:07:13,562 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 22:07:13,676 - INFO - CSV actualizado con 2753 filas
+2025-05-23 22:07:13,676 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 22:07:14,495 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 22:07:14,496 - INFO - Actualización de datos completada
+2025-05-23 22:11:14,610 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 22:11:15,751 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 22:11:16,358 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 22:11:16,359 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 22:11:16,463 - INFO - CSV actualizado con 2753 filas
+2025-05-23 22:11:16,463 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 22:11:16,984 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 22:11:16,985 - INFO - Actualización de datos completada
+2025-05-23 22:15:09,860 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 22:15:11,965 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 22:15:13,041 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 22:15:13,042 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 22:15:13,146 - INFO - CSV actualizado con 2753 filas
+2025-05-23 22:15:13,147 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 22:15:13,702 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 22:15:13,703 - INFO - Actualización de datos completada
+2025-05-23 22:31:10,874 - INFO - Descargando datos históricos para XRP-USD
+2025-05-23 22:31:13,433 - INFO - Descargando datos macroeconómicos para SPY
+2025-05-23 22:31:14,285 - INFO - Datos descargados y enriquecidos: 2753 filas
+2025-05-23 22:31:14,285 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-05-23 22:31:14,390 - INFO - CSV actualizado con 2753 filas
+2025-05-23 22:31:14,390 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-05-23 22:31:16,150 - INFO - SQLite actualizado con 2753 filas
+2025-05-23 22:31:16,151 - INFO - Actualización de datos completada
