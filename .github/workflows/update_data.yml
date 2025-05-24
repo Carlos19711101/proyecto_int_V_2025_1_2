@@ -30,7 +30,7 @@ jobs:
         run: .\venv\Scripts\python.exe -m pip install --upgrade pip
 
       - name: Paso 6 - instalar dependencias desde requirements.txt
-        run: .\venv\Scripts\python.exe -m pip install -r requirements.txt
+        run: .\venv\Scripts\python.exe -m pip install -r requirements/requirements.txt
 
       - name: Paso 7 - Ejecutar Script
         run: .\venv\Scripts\python.exe prueba.py
