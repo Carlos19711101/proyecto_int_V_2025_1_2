@@ -70,16 +70,21 @@ def main():
 
     df_filtrado = df.loc[fecha_inicio:fecha_fin]
 
-    # KPIs para mostrar valores actuales
+    # --- FILTRAR LOS ÚLTIMOS 60 DÍAS PARA LOS GRÁFICOS Y KPIs ---
+    fecha_max_60 = df_filtrado.index.max()
+    fecha_min_60 = fecha_max_60 - pd.Timedelta(days=60)
+    df_ultimos_60 = df_filtrado.loc[fecha_min_60:fecha_max_60]
+
+    # KPIs para mostrar valores actuales (últimos 60 días)
     kpis = {
-        "Tasa de Variación (%)": df_filtrado['Close'].pct_change(),
-        "Media Móvil 30": df_filtrado['Media Móvil 30'],
-        "Volatilidad 30": df_filtrado['Close'].pct_change().rolling(window=30).std() * np.sqrt(30),
-        "Retorno Acumulado": (1 + df_filtrado['Close'].pct_change()).cumprod() - 1,
-        "Desviación Estándar 30": df_filtrado['Close'].rolling(window=30).std(),
-        "RSI": df_filtrado['RSI'],
-        "MACD": df_filtrado['MACD'],
-        "ADX": df_filtrado['ADX']
+        "Tasa de Variación (%)": df_ultimos_60['Close'].pct_change(),
+        "Media Móvil 30": df_ultimos_60['Media Móvil 30'],
+        "Volatilidad 30": df_ultimos_60['Close'].pct_change().rolling(window=30).std() * np.sqrt(30),
+        "Retorno Acumulado": (1 + df_ultimos_60['Close'].pct_change()).cumprod() - 1,
+        "Desviación Estándar 30": df_ultimos_60['Close'].rolling(window=30).std(),
+        "RSI": df_ultimos_60['RSI'],
+        "MACD": df_ultimos_60['MACD'],
+        "ADX": df_ultimos_60['ADX']
     }
 
     # Mostrar valores actuales de KPIs
@@ -94,10 +99,13 @@ def main():
 
     st.markdown("---")
 
-    # Mostrar gráfico individual para cada KPI
+    # Mostrar gráfico individual para cada KPI (últimos 60 días)
     for label, serie in kpis.items():
-        st.subheader(f"Evolución de {label}")
+        st.subheader(f"Evolución de {label} (últimos 60 días)")
         st.line_chart(serie)
 
 if __name__ == "__main__":
     main()
+
+# Para correr el dashboard:
+# streamlit run src/dashboard.py

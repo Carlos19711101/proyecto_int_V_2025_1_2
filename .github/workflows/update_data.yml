@@ -32,7 +32,7 @@ jobs:
       - name: Paso 6 - instalar dependencias desde requirements.txt
         run: .\venv\Scripts\python.exe -m pip install -r requirements/requirements.txt
 
-      - name: Paso 7 - Ejecutar Script
+      - name: Paso 7 - Ejecutar Script para entrenar y predecir el modelo  
         run: .\venv\Scripts\python.exe prueba.py
 
       - name: Commit and Push changes
