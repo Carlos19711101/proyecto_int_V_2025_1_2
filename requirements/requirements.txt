@@ -4,3 +4,5 @@ openpyxl
 requests
 yfinance
 scikit-learn
+matplotlib
+plotly
