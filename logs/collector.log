@@ -40,3 +40,11 @@
 2025-06-10 00:04:40,496 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
 2025-06-10 00:04:40,776 - INFO - SQLite actualizado con 2770 filas
 2025-06-10 00:04:40,777 - INFO - Actualización de datos completada
+2025-06-11 01:52:27,076 - INFO - Descargando datos históricos para XRP-USD
+2025-06-11 01:52:27,610 - INFO - Descargando datos macroeconómicos para SPY
+2025-06-11 01:52:28,027 - INFO - Datos descargados y enriquecidos: 2771 filas
+2025-06-11 01:52:28,027 - INFO - Guardando datos en CSV: src/XRP/static/data/historical.csv
+2025-06-11 01:52:28,074 - INFO - CSV actualizado con 2772 filas
+2025-06-11 01:52:28,074 - INFO - Guardando datos en SQLite: src/XRP/static/data/historical.db
+2025-06-11 01:52:28,319 - INFO - SQLite actualizado con 2771 filas
+2025-06-11 01:52:28,319 - INFO - Actualización de datos completada
