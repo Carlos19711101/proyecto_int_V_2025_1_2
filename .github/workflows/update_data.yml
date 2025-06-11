@@ -38,7 +38,7 @@ jobs:
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Primera entrega action, segunda entrega action
+          commit_message: Primera entrega action, segunda entrega action, tercera entrega y final con archivo mp4 
           commit_user_name: Carlos Alberto Velez M [GitHub Actions]
           commit_user_email: carlos.velez51@iudigital.edu.co
           commit_author: Carlos Alberto Velez M <carlos.velez51@iudigital.edu.co>
